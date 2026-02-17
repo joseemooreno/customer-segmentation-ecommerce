@@ -59,25 +59,25 @@ This project addresses the core strategic question:
 
 ## 🚀 Strategic Recommendations
 
-### 💎 High-Value Loyal Customers (The Revenue Engine)
+### 💎 High-Value Loyal Customers
 Our main strategic priority. Although small, this group generates more than half of the total revenue. 
 * **Strategy:** Focused on value retention and protection.
 * **Tactics:** Highly personalized direct marketing (segmented email marketing, exclusive communications, premium promotions). It is essential to reinforce a **sense of exclusivity and belonging**.
 * **Monitoring:** Implement early warning signals for decreasing purchase frequency to prevent potential churn. Investing here requires a lower absolute budget but generates a significantly higher return.
 
-### 📈 Promising Customers (The Growth Opportunity)
+### 📈 Promising Customers
 Clients who purchased recently but have room to increase frequency and spending. 
 * **Strategy:** Growth acceleration and migration to High-Value tier.
 * **Tactics:** Behavior-based cross-selling, incentives aimed at recurrence (loyalty points, repeat-purchase promotions), and campaigns to increase average ticket size.
 * **Objective:** Gradually convert this segment into high-value assets; even small increases in frequency will materially impact total revenue.
 
-### ⚠️ At-Risk Customers (The Reactivation Target)
+### ⚠️ At-Risk Customers
 Past high-value clients who have reduced their activity. 
 * **Strategy:** Strategic reactivation.
 * **Tactics:** Deploy personalized re-engagement campaigns with time-limited incentives (**“come back and get…”**) to stimulate a new purchase.
 * **Reboarding:** Once reactivated, these customers should be integrated into loyalty programs similar to those for "Promising" customers.
 
-### 📉 Low-Value Inactive (The Optimization Target)
+### 📉 Low-Value Inactive Customers
 Significant in size (22.3%) but marginal in revenue contribution (2.7%).
 * **Strategy:** Resource optimization.
 * **Tactics:** Active investment is **not recommended**. Maintain low-cost automated actions only.
