@@ -22,9 +22,8 @@ This project addresses the core strategic question:
 ## ⚙️ Analytical Approach
 
 ### 1. Data Preparation
-* Transactional data cleaning.
-* Customer-level aggregation.
-* Removal of invalid or cancelled transactions.
+* Transactional data cleaning and customer-level aggregation.
+* Removal of invalid or cancelled transactions (Quantity < 0).
 
 ### 2. Feature Engineering
 **RFM Framework:**
@@ -34,74 +33,75 @@ This project addresses the core strategic question:
 * *Correlation analysis was performed to remove redundant variables and prevent multicollinearity.*
 
 ### 3. Data Transformation
-* **Log transformation** using `np.log1p` to mitigate skewness.
+* **Log transformation** (`np.log1p`) to mitigate skewness.
 * **RobustScaler** applied to reduce outlier influence on cluster centroids.
 
 ### 4. Segmentation Model
-* **K-Means clustering.**
-* Optimal **k** selected via **Elbow Method** and **Silhouette Score**.
-* Final model: **4 customer segments**.
+* **K-Means clustering** optimized via **Elbow Method** and **Silhouette Score**.
+* Final model: **4 distinct customer segments**.
 
 ---
 
 ## 🔍 Key Findings
 
-| Segment | Base % | Revenue % | Description |
+| Segment | Base % | Revenue % | Strategic Priority |
 | :--- | :---: | :---: | :--- |
-| 🔵 **High-Value Loyal** | 13.4% | 61.8% | Critical revenue drivers. Small size, massive impact. |
-| 🔴 **Promising** | 31.0% | 25.4% | High growth potential. Focus on increasing frequency. |
-| 🟢 **At-Risk** | 33.3% | 10.1% | Declining engagement. Needs low-cost reactivation. |
-| ⚫ **Low-Value Inactive** | 22.3% | 2.7% | Minimal contribution. Recommended minimal investment. |
+| 🔵 **High-Value Loyal** | 13.4% | 61.8% | **Value Protection** |
+| 🔴 **Promising** | 31.0% | 25.4% | **Growth Acceleration** |
+| 🟢 **At-Risk** | 33.3% | 10.1% | **Reactivation** |
+| ⚫ **Low-Value Inactive** | 22.3% | 2.7% | **Cost Optimization** |
 
-### Customer Base Distribution
+### Customer Base & Revenue Distribution
 ![Customer Distribution](images/cluster_distribution.png)
-
-### Revenue Share Distribution
 ![Revenue Distribution](images/revenue_distribution.png)
 
 ---
 
-## 📈 Estimated Business Impact
-Based on current revenue concentration, the following strategic levers were identified:
+## 🚀 Strategic Recommendations
 
-* **Value Retention:** A 5% improvement in retention within the **High-Value** segment would disproportionately impact total revenue due to its 61.8% contribution.
-* **Upselling:** Increasing annual purchase frequency by just one additional transaction among **Promising** customers could materially expand total revenue.
-* **Efficiency:** Reactivating a small fraction of **At-Risk** customers represents low-cost incremental revenue compared to expensive new acquisition strategies.
+### 💎 High-Value Loyal Customers (The Revenue Engine)
+Our main strategic priority. Although small, this group generates more than half of the total revenue. 
+* **Strategy:** Focused on value retention and protection.
+* **Tactics:** Highly personalized direct marketing (segmented email marketing, exclusive communications, premium promotions). It is essential to reinforce a **sense of exclusivity and belonging**.
+* **Monitoring:** Implement early warning signals for decreasing purchase frequency to prevent potential churn. Investing here requires a lower absolute budget but generates a significantly higher return.
+
+### 📈 Promising Customers (The Growth Opportunity)
+Clients who purchased recently but have room to increase frequency and spending. 
+* **Strategy:** Growth acceleration and migration to High-Value tier.
+* **Tactics:** Behavior-based cross-selling, incentives aimed at recurrence (loyalty points, repeat-purchase promotions), and campaigns to increase average ticket size.
+* **Objective:** Gradually convert this segment into high-value assets; even small increases in frequency will materially impact total revenue.
+
+### ⚠️ At-Risk Customers (The Reactivation Target)
+Past high-value clients who have reduced their activity. 
+* **Strategy:** Strategic reactivation.
+* **Tactics:** Deploy personalized re-engagement campaigns with time-limited incentives (**“come back and get…”**) to stimulate a new purchase.
+* **Reboarding:** Once reactivated, these customers should be integrated into loyalty programs similar to those for "Promising" customers.
+
+### 📉 Low-Value Inactive (The Optimization Target)
+Significant in size (22.3%) but marginal in revenue contribution (2.7%).
+* **Strategy:** Resource optimization.
+* **Tactics:** Active investment is **not recommended**. Maintain low-cost automated actions only.
+* **Objective:** Prioritize budget allocation toward higher-potential segments to maximize overall marketing efficiency.
 
 ---
 
-## 🚀 Strategic Implications
-* **Value Protection:** Prioritize churn prevention among High-Value customers.
-* **Growth Acceleration:** Target Promising customers with frequency-driving initiatives.
-* **Reactivation Strategy:** Deploy personalized campaigns to At-Risk customers.
-* **Cost Optimization:** Limit active marketing spend on structurally low-value segments.
-
-**The organization shifts from mass marketing to precision-based resource allocation.**
+## 📈 Estimated Business Impact
+* **Value Retention:** A 5% improvement in retention within the **High-Value** segment would disproportionately impact total revenue due to its 61.8% contribution.
+* **Frequency Expansion:** Increasing annual purchase frequency by just one additional transaction among **Promising** customers could materially expand the active revenue base.
+* **Efficiency:** Reactivating a small fraction of **At-Risk** customers represents low-cost incremental revenue compared to expensive new acquisition strategies.
 
 ---
 
 ## 🛠️ Technical Stack
 * **Tools:** `Python`, `Pandas`, `NumPy`, `Scikit-learn`, `Matplotlib`, `Seaborn`.
-* **Techniques:** RFM Analysis, K-Means Clustering, Feature Engineering, Correlation-Based Feature Selection, Log Transformation (`np.log1p`), Robust Scaling.
+* **Techniques:** RFM Analysis, K-Means Clustering, Feature Engineering, Correlation-Based Selection, Log Transformation (`np.log1p`), Robust Scaling.
 
 ---
 
 ## ⚠️ Limitations & Next Steps
-
-### Limitations
-* K-Means geometric assumptions (spherical clusters).
-* Static historical analysis window.
-* No predictive churn or CLV modeling implemented in this phase.
-
-### Next Steps
-1. **Churn Prediction Modeling:** Move from descriptive to predictive analysis.
-2. **Customer Lifetime Value (CLV) Estimation.**
-3. **Campaign Uplift Modeling:** Measure real-world impact of targeted actions.
-4. **Periodic Segmentation Refresh.**
+* **Limitations:** K-Means geometric assumptions; static historical window; no predictive churn modeling implemented in this phase.
+* **Next Steps:** Implement **Churn Prediction**, **Customer Lifetime Value (CLV)** estimation, and perform **Uplift Modeling** to measure the impact of targeted actions.
 
 ## Dataset
-
-Publicly available *Online Retail* transactional dataset.
-
-Source: Kaggle  
-https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset
+*Online Retail* transactional dataset.  
+Source: [Kaggle / UCI Machine Learning Repository](https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset)
