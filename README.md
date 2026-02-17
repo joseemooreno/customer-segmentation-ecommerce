@@ -46,10 +46,10 @@ This project addresses the core strategic question:
 
 | Segment | Base % | Revenue % | Strategic Priority |
 | :--- | :---: | :---: | :--- |
-| 🔵 **High-Value Loyal** | 13.4% | 61.8% | **Value Protection** |
-| 🔴 **Promising** | 31.0% | 25.4% | **Growth Acceleration** |
-| 🟢 **At-Risk** | 33.3% | 10.1% | **Reactivation** |
-| ⚫ **Low-Value Inactive** | 22.3% | 2.7% | **Cost Optimization** |
+| **High-Value Loyal** | 13.4% | 61.8% | **Value Protection** |
+| **Promising** | 31.0% | 25.4% | **Growth Acceleration** |
+| **At-Risk** | 33.3% | 10.1% | **Reactivation** |
+| **Low-Value Inactive** | 22.3% | 2.7% | **Cost Optimization** |
 
 ### Customer Base & Revenue Distribution
 ![Customer Distribution](images/cluster_distribution.png)
