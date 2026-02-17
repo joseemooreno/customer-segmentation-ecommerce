@@ -98,3 +98,10 @@ Based on current revenue concentration, the following strategic levers were iden
 2. **Customer Lifetime Value (CLV) Estimation.**
 3. **Campaign Uplift Modeling:** Measure real-world impact of targeted actions.
 4. **Periodic Segmentation Refresh.**
+
+## Dataset
+
+Publicly available *Online Retail* transactional dataset.
+
+Source: Kaggle  
+https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset
