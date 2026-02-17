@@ -104,4 +104,4 @@ Significant in size (22.3%) but marginal in revenue contribution (2.7%).
 
 ## Dataset
 *Online Retail* transactional dataset.  
-Source: [Kaggle / UCI Machine Learning Repository](https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset)
+Source: [Online Retail Dataset](https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset)
