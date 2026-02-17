@@ -1,6 +1,6 @@
 # Customer Segmentation Strategy – Executive Analytics Project
 
-## 🎯 Executive Summary
+## Executive Summary
 This project develops a customer segmentation framework using transactional data and an **RFM-based methodology** combined with **K-Means clustering**. 
 
 The analysis reveals a highly concentrated revenue structure:
@@ -11,7 +11,7 @@ This imbalance highlights a major opportunity for strategic resource allocation.
 
 ---
 
-## 💼 Business Context
+## Business Context
 Retail customer bases typically exhibit uneven value distribution. Treating all customers equally leads to inefficient marketing spend and diluted impact. 
 
 This project addresses the core strategic question:  
@@ -19,7 +19,7 @@ This project addresses the core strategic question:
 
 ---
 
-## ⚙️ Analytical Approach
+## Analytical Approach
 
 ### 1. Data Preparation
 * Transactional data cleaning and customer-level aggregation.
@@ -42,7 +42,7 @@ This project addresses the core strategic question:
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 | Segment | Base % | Revenue % | Strategic Priority |
 | :--- | :---: | :---: | :--- |
@@ -57,7 +57,7 @@ This project addresses the core strategic question:
 
 ---
 
-## 🚀 Strategic Recommendations
+## Strategic Recommendations
 
 ### 💎 High-Value Loyal Customers
 Our main strategic priority. Although small, this group generates more than half of the total revenue. 
@@ -85,20 +85,20 @@ Significant in size (22.3%) but marginal in revenue contribution (2.7%).
 
 ---
 
-## 📈 Estimated Business Impact
+## Estimated Business Impact
 * **Value Retention:** A 5% improvement in retention within the **High-Value** segment would disproportionately impact total revenue due to its 61.8% contribution.
 * **Frequency Expansion:** Increasing annual purchase frequency by just one additional transaction among **Promising** customers could materially expand the active revenue base.
 * **Efficiency:** Reactivating a small fraction of **At-Risk** customers represents low-cost incremental revenue compared to expensive new acquisition strategies.
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 * **Tools:** `Python`, `Pandas`, `NumPy`, `Scikit-learn`, `Matplotlib`, `Seaborn`.
 * **Techniques:** RFM Analysis, K-Means Clustering, Feature Engineering, Correlation-Based Selection, Log Transformation (`np.log1p`), Robust Scaling.
 
 ---
 
-## ⚠️ Limitations & Next Steps
+## Limitations & Next Steps
 * **Limitations:** K-Means geometric assumptions; static historical window; no predictive churn modeling implemented in this phase.
 * **Next Steps:** Implement **Churn Prediction**, **Customer Lifetime Value (CLV)** estimation, and perform **Uplift Modeling** to measure the impact of targeted actions.
 
